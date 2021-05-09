@@ -17,9 +17,10 @@
 #
 #  fk_rails_...  (board_id => boards.id)
 #
-class Comment < ApplicationRecord
-  belongs_to :board
+require 'test_helper'
 
-  validates :name, presence: true, length: {maximum: 10}
-  validates :comment, presence: true, length: {maximum: 1000}
+class CommentTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end

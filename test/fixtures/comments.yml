@@ -17,9 +17,13 @@
 #
 #  fk_rails_...  (board_id => boards.id)
 #
-class Comment < ApplicationRecord
-  belongs_to :board
 
-  validates :name, presence: true, length: {maximum: 10}
-  validates :comment, presence: true, length: {maximum: 1000}
-end
+one:
+  board: one
+  name: MyString
+  comment: MyText
+
+two:
+  board: two
+  name: MyString
+  comment: MyText
